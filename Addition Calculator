@@ -1,0 +1,8 @@
+def add(x,y)
+	x.to_i + y.to_i
+end
+
+puts "Please provide 2 numbers"
+
+puts add(gets.chomp,gets.chomp)
+

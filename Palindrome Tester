@@ -1,0 +1,15 @@
+def longest_palindrome(string)
+    string.length
+    palindrome_array = []
+    
+    (1..string.length).each do |x|
+    string.split('').each_cons(x) do |chain|
+    palindrome_array << chain.join if chain.join == chain.join.reverse
+end
+end
+    palindrome_array.max_by(&:length)
+end
+    
+
+
+longest_palindrome("afbbbfjdjklgdfdhfdkjfffhhfffjkdfhdhkyejejfjkd")

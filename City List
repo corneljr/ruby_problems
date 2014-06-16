@@ -1,0 +1,8 @@
+puts "Please enter your three favourite cities:"
+city_1 = gets.chomp
+city_2 = gets.chomp
+city_3 = gets.chomp
+
+city_arr = [city_1,city_2,city_3]
+
+city_arr.each  {|x| puts x}
